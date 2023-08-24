@@ -1,0 +1,111 @@
+.App {
+  margin: 0 auto;
+  background-color: #48844E;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 200px;
+}
+.navigation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  
+}
+.nav-list{
+  margin-left: 30px;
+}
+li {
+  list-style-type: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  color:#282c34;
+}
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.about-as-h3 {
+  text-align: center;
+  
+}
+a:hover {
+  color: black;
+}
+.App-link {
+  color: #61dafb;
+}
+.about-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  color: antiquewhite;
+  background-color: #48844E;
+
+}
+.about-as-content {
+  padding-left: 50px;
+  padding-top: 50px;
+  
+}
+.contats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  color: antiquewhite;
+  background-color: #48844E;
+}
+.contacts-image {
+  width: 50%;
+}
+.contacts-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  text-align: center;
+}
+.conacts-content {
+  font-size: 30px;
+  padding-top: 150px;
+  padding-left: 120px;
+}
+.icons {
+  margin-right: 10px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
