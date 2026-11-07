@@ -5,7 +5,8 @@
     python3 tools/publish_social.py publish   # опубликовать всё, чему пришло время
     python3 tools/publish_social.py check     # проверить доступ (токен, страница, Instagram), ничего не публикуя
 
-Нужен секрет репозитория META_PAGE_TOKEN — постоянный токен Facebook-страницы MonteBuild
+Нужен секрет репозитория META_PAGE_TOKEN — постоянный токен системного пользователя портфолио «Твой мастер»
+(или токен страницы) с доступом к странице MonteBuild (ID 135370676333010)
 с правами pages_manage_posts, pages_read_engagement, pages_show_list, instagram_basic,
 instagram_content_publish. Значение токена никогда не печатается.
 
@@ -72,7 +73,22 @@ def call(method, path, params=None):
         raise GraphError(f"{method} {path} → HTTP {e.code}: {msg}") from None
 
 
+PAGE_ID = os.environ.get("META_PAGE_ID", "135370676333010")  # страница MonteBuild
+
+
 def accounts():
+    """Токен может быть токеном страницы или системного пользователя бизнес-портфолио.
+    Во втором случае берём из /me/accounts токен нужной страницы (он тоже не истекает)."""
+    global TOKEN
+    try:
+        pages = call("GET", "me/accounts", {"fields": "id,name,access_token", "limit": "100"}).get("data", [])
+    except GraphError:
+        pages = []  # это уже токен страницы
+    page = next((p for p in pages if p["id"] == PAGE_ID), None)
+    if pages and not page:
+        raise GraphError(f"у токена нет доступа к странице {PAGE_ID}; доступны: " + ", ".join(p["name"] for p in pages))
+    if page:
+        TOKEN = page["access_token"]
     me = call("GET", "me", {"fields": "id,name,instagram_business_account{id,username}"})
     ig = me.get("instagram_business_account") or {}
     return me["id"], me.get("name"), ig.get("id"), ig.get("username")
