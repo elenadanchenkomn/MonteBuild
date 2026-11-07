@@ -92,8 +92,11 @@ def render(slide, n, total):
             lines = wrap(d, slide["title"], tf, W - 2 * PAD)
             y = H - PAD - len(lines) * int(76 * 1.15) - 10
             if slide.get("kicker"):
-                kf = font(34, 600)
-                d.text((PAD, y - 70), slide["kicker"].upper(), font=kf, fill=GREEN)
+                kf = font(32, 700)
+                k = slide["kicker"].upper()
+                kw = d.textlength(k, font=kf)
+                d.rounded_rectangle([PAD - 14, y - 82, PAD + kw + 14, y - 30], radius=10, fill=GREEN)
+                d.text((PAD, y - 76), k, font=kf, fill=BG)
             block(d, (PAD, y), slide["title"], tf, INK, W - 2 * PAD, 1.15)
             overflow = y < H * 0.35
         elif slide.get("caption"):
@@ -104,7 +107,11 @@ def render(slide, n, total):
         img = Image.new("RGB", (W, H), BG)
         d = ImageDraw.Draw(img)
         logo(img)
-        y = 300
+        tf, bf = font(66, 800), font(42, 400)
+        block_h = (150 if slide.get("num") else 0) + 50 + len(wrap(d, slide["title"], tf, W - 2 * PAD)) * int(66 * 1.15) + 36
+        if slide.get("body"):
+            block_h += len(wrap(d, slide["body"], bf, W - 2 * PAD)) * int(42 * 1.35)
+        y = max(260, (H - block_h) // 2)
         if slide.get("num"):
             d.text((PAD, y - 20), slide["num"], font=font(120, 800), fill=GREEN)
             y += 150
