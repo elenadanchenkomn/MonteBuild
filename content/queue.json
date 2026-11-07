@@ -1,0 +1,503 @@
+{
+  "note": "Расписание статей (понедельник) и бэклог тем. status: planned → published / needs_author / skipped. Номера n — из контент-плана.",
+  "metricool_brand": "не подключён: добавить бренд MonteBuild (Facebook-страница + Instagram @monte_build_) в Metricool",
+  "schedule": [
+    {
+      "date": "2026-11-09",
+      "n": 1,
+      "topic": "Плесень на стенах в Батуми: почему грибок возвращается и как убрать его по технологии",
+      "main_query": "плесень в квартире в Батуми",
+      "extra_queries": [
+        "как убрать грибок со стен",
+        "почему плесень возвращается после покраски"
+      ],
+      "service": "/udalenie-pleseni/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "plesen"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2026-11-16",
+      "n": 8,
+      "topic": "Смета на ремонт в Батуми: 7 скрытых строк, которые не показывают подрядчики",
+      "main_query": "смета на ремонт квартиры в Батуми",
+      "extra_queries": [
+        "что входит в смету на ремонт",
+        "скрытые расходы при ремонте"
+      ],
+      "service": "/ceny/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "steny",
+        "obekty"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2026-11-23",
+      "n": 17,
+      "topic": "Как принять ремонт в Батуми, не приезжая: чек-лист из 20 пунктов для видеоприёмки",
+      "main_query": "как принять ремонт удалённо",
+      "extra_queries": [
+        "чек-лист приёмки ремонта",
+        "видеоприёмка квартиры"
+      ],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "steny",
+        "instrumenty"
+      ],
+      "priority": "P1",
+      "status": "planned",
+      "notes": "Связать со статьёй /blog/remont-kvartiry-v-batumi-udalenno/ (та — про процесс, эта — чек-лист)."
+    },
+    {
+      "date": "2026-11-30",
+      "n": 15,
+      "topic": "Q2 против Q4 на одной стене: что видно в боковом свете и за что вы платите",
+      "main_query": "уровни шпаклёвки Q1 Q2 Q3 Q4",
+      "extra_queries": [
+        "чем Q3 отличается от Q4",
+        "как проверить стену боковым светом"
+      ],
+      "service": "/malyarnye-raboty/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2026-12-07",
+      "n": 2,
+      "topic": "Квартира в Батуми пустует зимой: 7 действий, чтобы весной не было чёрных углов",
+      "main_query": "квартира в Батуми зимой сырость",
+      "extra_queries": [
+        "как оставить квартиру на зиму",
+        "нужен ли осушитель в Батуми"
+      ],
+      "service": "/udalenie-pleseni/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "plesen"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2026-12-14",
+      "n": 3,
+      "topic": "Какие материалы выживают в батумской влажности, а какие придётся менять через год",
+      "main_query": "краска для влажного климата",
+      "extra_queries": [
+        "влагостойкая шпаклёвка",
+        "гипсокартон у моря"
+      ],
+      "service": "/malyarnye-raboty/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "steny",
+        "shtukaturka"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2026-12-21",
+      "n": 26,
+      "topic": "До и после: как мы исправили стены после предыдущей бригады",
+      "main_query": "переделка ремонта после бригады",
+      "extra_queries": [
+        "исправить кривые стены"
+      ],
+      "service": "/portfolio/",
+      "rubric": "keisy",
+      "photo_folders": [
+        "obekty"
+      ],
+      "priority": "P1",
+      "status": "needs_author",
+      "notes": "Нужен реальный объект: папка photos/obekty/<объект>/ с фото до/после и info.txt. Если её нет — взять следующую тему из backlog и напомнить владельцу."
+    },
+    {
+      "date": "2026-12-28",
+      "n": 10,
+      "topic": "Договор с подрядчиком в Грузии: 5 пунктов, которые защитят ваши деньги",
+      "main_query": "договор на ремонт квартиры в Грузии",
+      "extra_queries": [
+        "аванс подрядчику",
+        "этапы оплаты ремонта"
+      ],
+      "service": "/kontakty/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "obekty",
+        "steny"
+      ],
+      "priority": "P1",
+      "status": "planned",
+      "notes": "Без юридических советов сверх общего; рекомендовать проверять договор у юриста."
+    },
+    {
+      "date": "2027-01-04",
+      "n": 27,
+      "topic": "Ремонт под посуточную аренду в Батуми: бюджет, сроки и что окупается",
+      "main_query": "ремонт под посуточную аренду в Батуми",
+      "extra_queries": [
+        "окупаемость квартиры в Батуми",
+        "какой ремонт нужен для аренды"
+      ],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "investoram",
+      "photo_folders": [
+        "obekty",
+        "steny"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2027-01-11",
+      "n": 11,
+      "topic": "Ремонт 50 м² под аренду и для себя: две сметы на одном примере",
+      "main_query": "стоимость ремонта квартиры 50 м²",
+      "extra_queries": [
+        "ремонт под сдачу или для себя"
+      ],
+      "service": "/ceny/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P1",
+      "status": "planned",
+      "notes": "Считать только по ценам из facts.md (Q3 от 40 ₾, Q4 от 100 ₾); остальное — «по замеру» или рыночные диапазоны с источником."
+    },
+    {
+      "date": "2027-01-18",
+      "n": 19,
+      "topic": "Электрика в белом каркасе: что проверить и что переделать сразу",
+      "main_query": "электрика в белом каркасе",
+      "extra_queries": [
+        "замена проводки в новостройке"
+      ],
+      "service": "/elektroprovodka/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "elektrika"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "date": "2027-01-25",
+      "n": 6,
+      "topic": "Венецианская штукатурка у моря: откуда трещины и как их избежать",
+      "main_query": "трещины на венецианской штукатурке",
+      "extra_queries": [
+        "венецианская штукатурка во влажном климате"
+      ],
+      "service": "/venecianskaya-shtukaturka/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "shtukaturka"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    }
+  ],
+  "backlog": [
+    {
+      "n": 4,
+      "topic": "Конденсат на окнах и сырые углы: мостики холода простыми словами",
+      "main_query": "конденсат на окнах в квартире",
+      "extra_queries": [
+        "мостики холода"
+      ],
+      "service": "/udalenie-pleseni/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "plesen"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 9,
+      "topic": "Сколько стоит покраска стен в Батуми за м² и как посчитать площадь стен",
+      "main_query": "стоимость покраски стен за м² Батуми",
+      "extra_queries": [
+        "как посчитать площадь стен"
+      ],
+      "service": "/kalkulyator-pokraski/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "n": 16,
+      "topic": "Как принять малярные работы: чек-лист с фонарём и правилом",
+      "main_query": "приёмка малярных работ",
+      "extra_queries": [
+        "как проверить покраску стен"
+      ],
+      "service": "/malyarnye-raboty/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "steny",
+        "instrumenty"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "n": 28,
+      "topic": "Купили квартиру с ремонтом от застройщика: что переделать сразу",
+      "main_query": "ремонт от застройщика что переделать",
+      "extra_queries": [
+        "зелёный каркас недостатки"
+      ],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "investoram",
+      "photo_folders": [
+        "steny",
+        "elektrika"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "n": 18,
+      "topic": "Приёмка квартиры у застройщика в Батуми: 15 пунктов до подписи",
+      "main_query": "приёмка квартиры у застройщика",
+      "extra_queries": [
+        "что проверить при приёмке новостройки"
+      ],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "steny",
+        "instrumenty"
+      ],
+      "priority": "P1",
+      "status": "planned"
+    },
+    {
+      "n": 5,
+      "topic": "Осушитель, вентиляция или кондиционер: что реально спасает от сырости",
+      "main_query": "осушитель воздуха для квартиры",
+      "extra_queries": [
+        "как снизить влажность в квартире"
+      ],
+      "service": "/udalenie-pleseni/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "plesen"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 24,
+      "topic": "5 признаков, что бригада затягивает ремонт",
+      "main_query": "бригада затягивает ремонт",
+      "extra_queries": [
+        "сроки ремонта квартиры"
+      ],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "obekty"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 22,
+      "topic": "Почему трескается шпаклёвка: усадка, армирование, сроки сушки",
+      "main_query": "трещины на шпаклёвке",
+      "extra_queries": [
+        "стеклохолст от трещин"
+      ],
+      "service": "/malyarnye-raboty/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 23,
+      "topic": "Порядок работ при ремонте: что за чем, чтобы не переделывать",
+      "main_query": "порядок работ при ремонте квартиры",
+      "extra_queries": [],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 21,
+      "topic": "Венецианская или декоративная штукатурка: что выбрать и куда",
+      "main_query": "венецианская или декоративная штукатурка",
+      "extra_queries": [],
+      "service": "/dekorativnaya-shtukaturka/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "shtukaturka"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 20,
+      "topic": "Сколько розеток и где: схема для студии и 1+1",
+      "main_query": "сколько розеток нужно в квартире",
+      "extra_queries": [],
+      "service": "/elektroprovodka/",
+      "rubric": "standarty",
+      "photo_folders": [
+        "elektrika"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 12,
+      "topic": "Сколько стоит венецианская штукатурка и из чего складывается цена",
+      "main_query": "венецианская штукатурка цена за м²",
+      "extra_queries": [],
+      "service": "/venecianskaya-shtukaturka/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "shtukaturka"
+      ],
+      "priority": "P2",
+      "status": "planned",
+      "notes": "Цену MonteBuild не называть — «по замеру»; рыночные диапазоны только с источником."
+    },
+    {
+      "n": 29,
+      "topic": "Отделка, которая переживёт арендаторов: стойкие покрытия",
+      "main_query": "моющаяся краска для стен",
+      "extra_queries": [],
+      "service": "/malyarnye-raboty/",
+      "rubric": "investoram",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 30,
+      "topic": "Освежить квартиру между сезонами аренды за 7 дней",
+      "main_query": "косметический ремонт квартиры под аренду",
+      "extra_queries": [],
+      "service": "/malyarnye-raboty/",
+      "rubric": "investoram",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P2",
+      "status": "planned",
+      "notes": "Лучше публиковать в феврале–апреле."
+    },
+    {
+      "n": 14,
+      "topic": "Покрасить самому или нанять: честный расчёт для 1+1",
+      "main_query": "покрасить стены самому или нанять",
+      "extra_queries": [],
+      "service": "/kalkulyator-pokraski/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "steny",
+        "instrumenty"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 32,
+      "topic": "Аренда инструмента для самостоятельной покраски: что взять и на сколько",
+      "main_query": "аренда инструмента для ремонта Батуми",
+      "extra_queries": [],
+      "service": "/equipment-rental/",
+      "rubric": "diy",
+      "photo_folders": [
+        "instrumenty"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 13,
+      "topic": "Материалы в Батуми: что покупать на месте, а что везти",
+      "main_query": "где купить стройматериалы в Батуми",
+      "extra_queries": [],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "dengi",
+      "photo_folders": [
+        "steny"
+      ],
+      "priority": "P2",
+      "status": "planned"
+    },
+    {
+      "n": 7,
+      "topic": "Морская соль: что в квартире у моря портится первым",
+      "main_query": "квартира у моря что портится",
+      "extra_queries": [],
+      "service": "/remont-pod-klyuch/",
+      "rubric": "vlaga",
+      "photo_folders": [
+        "plesen",
+        "elektrika"
+      ],
+      "priority": "P3",
+      "status": "planned"
+    },
+    {
+      "n": 33,
+      "topic": "Шлифовка стен без пыли: «жираф», пылесос, абразив",
+      "main_query": "шлифовка стен без пыли",
+      "extra_queries": [],
+      "service": "/equipment-rental/",
+      "rubric": "diy",
+      "photo_folders": [
+        "instrumenty",
+        "steny"
+      ],
+      "priority": "P3",
+      "status": "planned"
+    },
+    {
+      "n": 34,
+      "topic": "Окрасочный аппарат или валик: когда безвоздушная покраска окупается",
+      "main_query": "окрасочный аппарат или валик",
+      "extra_queries": [],
+      "service": "/equipment-rental/",
+      "rubric": "diy",
+      "photo_folders": [
+        "instrumenty"
+      ],
+      "priority": "P3",
+      "status": "planned"
+    }
+  ],
+  "published": [],
+  "social": []
+}

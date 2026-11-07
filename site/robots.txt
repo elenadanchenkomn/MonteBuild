@@ -1,0 +1,6 @@
+# Сайт открыт для поисковых систем и ИИ-ассистентов (ChatGPT, Claude, Perplexity, Gemini и др.)
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://montebuild.com/sitemap.xml

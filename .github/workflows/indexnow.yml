@@ -1,0 +1,48 @@
+name: IndexNow (Яндекс, Bing)
+# После каждого изменения сайта ждёт, пока Netlify выложит новые страницы, и сообщает их адреса в IndexNow.
+on:
+  push:
+    branches: [main]
+    paths: ["site/**"]
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Собрать изменённые страницы
+        id: urls
+        run: |
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            FILES=$(git diff --name-only HEAD~1 HEAD -- 'site/**/*.html' 'site/*.html')
+          else
+            FILES=$(git ls-files 'site/**/*.html')
+          fi
+          URLS=""
+          for f in $FILES; do
+            [ -f "$f" ] || continue
+            case "$f" in site/404.html) continue;; esac
+            p=${f#site/}; p=${p%index.html}
+            URLS="$URLS https://montebuild.com/$p"
+          done
+          echo "list=$(echo $URLS)" >> "$GITHUB_OUTPUT"
+          echo "Страницы: $URLS"
+      - name: Дождаться публикации на Netlify и отправить в IndexNow
+        if: steps.urls.outputs.list != ''
+        env:
+          KEY: 5b8e2f7c41d94a6e9c3f0a1d7e6b2c48
+          URLS: ${{ steps.urls.outputs.list }}
+        run: |
+          FIRST=$(echo $URLS | cut -d' ' -f1)
+          for i in $(seq 1 30); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$FIRST")
+            [ "$code" = "200" ] && break
+            sleep 20
+          done
+          LIST=$(printf '"%s",' $URLS); LIST="[${LIST%,}]"
+          BODY="{\"host\":\"montebuild.com\",\"key\":\"$KEY\",\"keyLocation\":\"https://montebuild.com/$KEY.txt\",\"urlList\":$LIST}"
+          echo "$BODY"
+          curl -s -w "\nIndexNow HTTP %{http_code}\n" -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" -d "$BODY"

@@ -1,0 +1,7 @@
+# Сайт montebuild.com публикуется из папки site/.
+# Сборки нет: Netlify просто выкладывает файлы. Папки content/, tools/, social/ на сайт не попадают.
+[build]
+  publish = "site"
+  command = "echo 'static site, no build'"
+  # не пересобирать сайт, если в коммите не менялась папка site/ (например, только посты для соцсетей)
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site/ netlify.toml"
