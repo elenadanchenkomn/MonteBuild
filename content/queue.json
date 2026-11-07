@@ -1,6 +1,5 @@
 {
-  "note": "Расписание статей (понедельник) и бэклог тем. status: planned → published / needs_author / skipped. Номера n — из контент-плана.",
-  "metricool_brand": "не подключён: добавить бренд MonteBuild (Facebook-страница + Instagram @monte_build_) в Metricool",
+  "note": "Расписание статей (понедельник) и бэклог тем. status: planned → published / needs_author / skipped. Номера n — из контент-плана. Посты для соцсетей — в content/social_posts.json.",
   "schedule": [
     {
       "date": "2026-11-09",
@@ -498,6 +497,5 @@
       "status": "planned"
     }
   ],
-  "published": [],
-  "social": []
+  "published": []
 }

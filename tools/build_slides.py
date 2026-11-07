@@ -2,7 +2,7 @@
 """Карусель / картинка для Facebook и Instagram в стиле montebuild.com (1080×1350, тёмный фон, зелёный акцент).
 
     python3 tools/build_slides.py content/social/<файл>.json social/<папка>
-    -> social/<папка>/slide-01.png, slide-02.png ... ; при переполнении текста печатает «TEXT OVERFLOWS slide N».
+    -> social/<папка>/slide-01.jpg, slide-02.jpg ... (JPEG — Instagram API принимает только JPEG) ; при переполнении текста печатает «TEXT OVERFLOWS slide N».
 
 Формат JSON:
 {
@@ -130,7 +130,7 @@ def main():
     slides = spec["slides"]
     for i, s in enumerate(slides, 1):
         img, over = render(s, i, len(slides))
-        img.save(out / f"slide-{i:02d}.png", optimize=True)
+        img.save(out / f"slide-{i:02d}.jpg", "JPEG", quality=92, optimize=True, progressive=True)
         if over:
             print(f"TEXT OVERFLOWS slide {i}")
     print(f"OK: {len(slides)} слайдов в {sys.argv[2]}")

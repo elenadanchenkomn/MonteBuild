@@ -6,6 +6,7 @@
 - `social/` — готовые картинки каруселей для Facebook/Instagram (на сайт не попадают).
 - `tools/` — сборка статьи (`build_article.py`), подготовка фото (`prep_image.py`), карусели (`build_slides.py`).
 - `GUIDE.md` — правила текстов, обязательны для автоматических задач.
+- `.github/workflows/social.yml` + `tools/publish_social.py` — каждый час публикует посты из `content/social_posts.json` в Facebook и Instagram (нужен секрет `META_PAGE_TOKEN`).
 - `.github/workflows/indexnow.yml` — после изменения сайта сообщает новые страницы в IndexNow (Яндекс, Bing).
 
 Публикация: push в `main` → Netlify выкладывает `site/` автоматически.
