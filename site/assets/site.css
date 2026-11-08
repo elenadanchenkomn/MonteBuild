@@ -128,6 +128,7 @@ thead th{background:#16201a;color:#fff;font-weight:700}
 tbody th{font-weight:700;width:18%}
 .ptable tbody th{width:auto}
 .ptable td:last-child{font-weight:700;white-space:nowrap}
+@media (max-width:600px){.ptable{min-width:0}.ptable th,.ptable td{padding:12px 8px;font-size:15px}.ptable tbody th{font-weight:500}.ptable td:nth-child(2){white-space:nowrap}}
 .price-mini{padding-left:18px}
 
 /* До/после — двигается пальцем и мышью */
