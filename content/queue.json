@@ -16,7 +16,9 @@
         "plesen"
       ],
       "priority": "P1",
-      "status": "planned"
+      "status": "published",
+      "slug": "plesen-v-kvartire-batumi",
+      "url": "https://montebuild.com/blog/plesen-v-kvartire-batumi/"
     },
     {
       "date": "2026-11-16",
@@ -497,5 +499,11 @@
       "status": "planned"
     }
   ],
-  "published": []
+  "published": [
+    {
+      "date": "2026-11-09",
+      "n": 1,
+      "slug": "plesen-v-kvartire-batumi"
+    }
+  ]
 }
