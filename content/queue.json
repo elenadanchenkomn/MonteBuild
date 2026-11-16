@@ -36,7 +36,9 @@
         "obekty"
       ],
       "priority": "P1",
-      "status": "planned"
+      "status": "published",
+      "slug": "smeta-na-remont-kvartiry-batumi",
+      "url": "https://montebuild.com/blog/smeta-na-remont-kvartiry-batumi/"
     },
     {
       "date": "2026-11-23",
@@ -504,6 +506,11 @@
       "date": "2026-11-09",
       "n": 1,
       "slug": "plesen-v-kvartire-batumi"
+    },
+    {
+      "date": "2026-11-16",
+      "n": 8,
+      "slug": "smeta-na-remont-kvartiry-batumi"
     }
   ]
 }
