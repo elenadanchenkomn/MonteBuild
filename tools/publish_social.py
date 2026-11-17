@@ -41,7 +41,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE = ROOT / "content" / "social_posts.json"
-REPO = os.environ.get("GITHUB_REPOSITORY", "elenadanchenkomn/montebuild")
+REPO = os.environ.get("GITHUB_REPOSITORY", "elenadanchenkomn/MonteBuild")
 RAW = f"https://raw.githubusercontent.com/{REPO}/main/"
 API = "https://graph.facebook.com/" + os.environ.get("GRAPH_VERSION", "v27.0")
 TOKEN = os.environ.get("META_PAGE_TOKEN", "")
