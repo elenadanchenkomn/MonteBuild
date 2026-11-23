@@ -50,6 +50,8 @@ SERVICE_NAMES = {
     "/elektroprovodka/": "Электропроводка",
     "/udalenie-pleseni/": "Удаление плесени",
     "/remont-pod-klyuch/": "Отделка под ключ",
+    "/upravlenie-remontom/": "Управление ремонтом",
+    "/prismotr-za-kvartiroj/": "Присмотр за квартирой",
     "/equipment-rental/": "Аренда оборудования",
     "/kalkulyator-pokraski/": "Калькулятор покраски",
     "/ceny/": "Цены",
@@ -58,7 +60,7 @@ SERVICE_NAMES = {
 }
 # страницы, на которых показывается блок «Статьи по теме»
 RELATED_PAGES = ["/malyarnye-raboty/", "/venecianskaya-shtukaturka/", "/dekorativnaya-shtukaturka/",
-                 "/elektroprovodka/", "/udalenie-pleseni/", "/remont-pod-klyuch/", "/equipment-rental/",
+                 "/elektroprovodka/", "/udalenie-pleseni/", "/remont-pod-klyuch/", "/upravlenie-remontom/", "/prismotr-za-kvartiroj/", "/equipment-rental/",
                  "/ceny/", "/kalkulyator-pokraski/", "/portfolio/"]
 REL_START, REL_END = "<!-- blog-related:start -->", "<!-- blog-related:end -->"
 
