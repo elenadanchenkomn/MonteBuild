@@ -56,8 +56,10 @@
         "instrumenty"
       ],
       "priority": "P1",
-      "status": "planned",
-      "notes": "Связать со статьёй /blog/remont-kvartiry-v-batumi-udalenno/ (та — про процесс, эта — чек-лист)."
+      "status": "published",
+      "notes": "Связать со статьёй /blog/remont-kvartiry-v-batumi-udalenno/ (та — про процесс, эта — чек-лист).",
+      "slug": "kak-prinyat-remont-udalenno",
+      "url": "https://montebuild.com/blog/kak-prinyat-remont-udalenno/"
     },
     {
       "date": "2026-11-30",
@@ -511,6 +513,11 @@
       "date": "2026-11-16",
       "n": 8,
       "slug": "smeta-na-remont-kvartiry-batumi"
+    },
+    {
+      "date": "2026-11-23",
+      "n": 17,
+      "slug": "kak-prinyat-remont-udalenno"
     }
   ]
 }
